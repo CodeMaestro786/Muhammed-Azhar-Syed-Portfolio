@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background: linear-gradient(to bottom right, #ff0000, #00ff00, #0000ff);
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
 }
 
 h1, h2 {
