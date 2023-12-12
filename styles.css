@@ -1,16 +1,30 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
+  font-weight: bold; /* Add font weight */
+  font-size: 18px; /* Increase base font size */
+  line-height: 1.4; /* Increase base line height for better readability */
   margin: 0;
   padding: 0;
   color: #333;
   background: linear-gradient(to bottom right,  #6a93dd 0%, #bdabab 100%);
 }
 
-h1, h2 {
+h1 {
   color: #222;
+  font-size: 32px; /* Increase heading font size */
 }
 
+h2 {
+    color: #222;
+    font-size: 24px; /* Increase heading font size */
+}
+
+p {
+    font-size: 16px; /* Increase paragraph font size */
+  }
+
+  
 a {
   color: #007bff;
   text-decoration: none;
