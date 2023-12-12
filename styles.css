@@ -1,141 +1,140 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  font-weight: bold; /* Add font weight */
-  font-size: 18px; /* Increase base font size */
-  line-height: 1.4; /* Increase base line height for better readability */
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background: linear-gradient(to bottom right,  #6a93dd 0%, #bdabab 100%);
-}
-
-h1 {
-  color: #222;
-  font-size: 32px; /* Increase heading font size */
-}
-
-h2 {
-    color: #222;
-    font-size: 24px; /* Increase heading font size */
-}
-
-p {
-    font-size: 16px; /* Increase paragraph font size */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to bottom right, #6a93dd 0%, #bdabab 100%);
   }
-
   
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Navigation Styles */
-nav {
-  background-color: #0c0c0c;
-  padding: 15px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-/* About Section Styles */
-section#about {
-  padding: 50px 0;
-  text-align: center;
-}
-
-/* Skills Section Styles */
-section#skills {
-  padding: 50px 0;
-}
-
-.skill {
-  margin-bottom: 20px;
-}
-
-.skill-name {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.skill-bar {
-  width: 100%;
-  background-color: #eee;
-  height: 10px;
-  border-radius: 5px;
-}
-
-.skill-progress {
-  height: 10px;
-  border-radius: 5px;
-  background-color: #007bff;
-}
-
-/* Projects Section Styles */
-section#projects {
-  padding: 50px 0;
-}
-
-.project {
-  margin-bottom: 30px;
-}
-
-.project-title {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.project-description {
-  margin-bottom: 10px;
-}
-
-.project-languages {
-  font-style: italic;
-}
-
-/* Blog Section Styles */
-section#blog {
-  padding: 50px 0;
-}
-
-.blog-post {
-  margin-bottom: 30px;
-}
-
-.blog-title {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.blog-category {
-  font-style: italic;
-}
-
-/* Testimonials Section Styles */
-section#testimonials {
+  h1 {
+    color: #222;
+    font-size: 32px;
+  }
+  
+  h2 {
+    color: #222;
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: #0c0c0c;
+    padding: 15px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  /* About Section Styles */
+  section#about {
     padding: 50px 0;
-    background-color: #f8f8f8; /* Add a background color for the testimonials section */
+    text-align: center;
+  }
+  
+  /* Skills Section Styles */
+  section#skills {
+    padding: 50px 0;
+  }
+  
+  .skill {
+    margin-bottom: 20px;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .skill-bar {
+    width: 100%;
+    background-color: #eee;
+    height: 10px;
+    border-radius: 5px;
+  }
+  
+  .skill-progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+  }
+  
+  /* Projects Section Styles */
+  section#projects {
+    padding: 50px 0;
+  }
+  
+  .project {
+    margin-bottom: 30px;
+  }
+  
+  .project-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .project-description {
+    margin-bottom: 10px;
+  }
+  
+  .project-languages {
+    font-style: italic;
+  }
+  
+  /* Blog Section Styles */
+  section#blog {
+    padding: 50px 0;
+  }
+  
+  .blog-post {
+    margin-bottom: 30px;
+  }
+  
+  .blog-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .blog-category {
+    font-style: italic;
+  }
+  
+  /* Testimonials Section Styles */
+  section#testimonials {
+    padding: 50px 0;
+    background-color: #f8f8f8;
   }
   
   .testimonial {
     margin-bottom: 30px;
-    padding: 20px; /* Add padding to create a box-like appearance */
-    background-color: #fff; /* Add a background color for the testimonials box */
+    padding: 20px;
+    background-color: #fff;
   }
   
   .testimonial-text {
@@ -147,131 +146,132 @@ section#testimonials {
     font-weight: bold;
     margin-top: 10px;
   }
-
-/* Resume Section Styles */
-section#resume {
-  padding: 50px 0;
-}
-
-/* Education Section Styles */
-section#education {
-  padding: 50px 0;
-}
-
-.education-institution {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.education-degree {
-  font-style: italic;
-}
-
-/* Contact Section Styles */
-section#contact {
-  padding: 50px 0;
-  background-color: #f8f8f8; /* Add a background color for the contact form section */
-  text-align: center;
-}
-
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px; /* Add padding to create a box-like appearance */
-  background-color: #fff; /* Add a background color for the contact form box */
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-form button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Footer Styles */
-footer {
-  background-color: #f9f9f9;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Mobile-first styles */
-body {
+  
+  /* Resume Section Styles */
+  section#resume {
+    padding: 50px 0;
+  }
+  
+  /* Education Section Styles */
+  section#education {
+    padding: 50px 0;
+  }
+  
+  .education-institution {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .education-degree {
+    font-style: italic;
+  }
+  
+  /* Contact Section Styles */
+  section#contact {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Mobile-first styles */
+  body {
     font-family: Arial, sans-serif;
   }
-
+  
   .container {
     padding: 20px;
   }
-
+  
   .nav-toggle {
     display: none;
   }
-
+  
   .nav-menu {
     display: flex;
     justify-content: flex-end;
   }
-
+  
   .nav-menu a {
     margin-left: 10px;
   }
-
+  
   .contact-form {
     margin-top: 20px;
   }
-
+  
   /* Tablet styles */
   @media (min-width: 768px) {
     .container {
       max-width: 680px;
       margin: 0 auto;
     }
-
+  
     .nav-toggle {
       display: inline-block;
       cursor: pointer;
     }
-
+  
     .nav-menu {
       display: flex;
       justify-content: flex-end;
     }
-
+  
     .nav-menu a {
       margin-left: 20px;
     }
-
+  
     .contact-form {
       margin-top: 40px;
     }
   }
-
+  
   /* Desktop styles */
   @media (min-width: 1024px) {
     .container {
       max-width: 980px;
     }
-
+  
     .nav-menu {
       justify-content: flex-start;
     }
-
+  
     .nav-menu a {
       margin-left: 40px;
     }
   }
+  
   #contact {
     background-color: #f8f8f8;
     padding: 50px;
