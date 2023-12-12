@@ -98,3 +98,4 @@ async function fetchTestimonials() {
     var whatsappText = "Name: " + name + "%0AEmail: " + email + "%0AMessage: " + message;
     var whatsappURL = "https://api.whatsapp.com/send?phone=0642152212&text=" + encodeURIComponent(whatsappText);
     window.open(whatsappURL);
+  }
