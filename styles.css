@@ -114,21 +114,25 @@ section#blog {
 
 /* Testimonials Section Styles */
 section#testimonials {
-  padding: 50px 0;
-}
-
-.testimonial {
-  margin-bottom: 30px;
-}
-
-.testimonial-text {
-  font-style: italic;
-}
-
-.testimonial-person {
-  font-weight: bold;
-  margin-top: 10px;
-}
+    padding: 50px 0;
+    background-color: #f8f8f8; /* Add a background color for the testimonials section */
+  }
+  
+  .testimonial {
+    margin-bottom: 30px;
+    padding: 20px; /* Add padding to create a box-like appearance */
+    background-color: #fff; /* Add a background color for the testimonials box */
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-person {
+    font-weight: bold;
+    margin-top: 10px;
+  }
 
 /* Resume Section Styles */
 section#resume {
@@ -152,12 +156,15 @@ section#education {
 /* Contact Section Styles */
 section#contact {
   padding: 50px 0;
+  background-color: #f8f8f8; /* Add a background color for the contact form section */
   text-align: center;
 }
 
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
+  padding: 20px; /* Add padding to create a box-like appearance */
+  background-color: #fff; /* Add a background color for the contact form box */
 }
 
 .contact-form input,
