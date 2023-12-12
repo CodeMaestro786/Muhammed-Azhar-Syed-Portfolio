@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Azhar Syed's Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 align="center">MY PORTFOLIO</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section id="home">
+              <h2>Welcome to my portfolio!</h2>
+              <p>Check out my latest projects and get in touch.</p>
+            </section>
+        <!-- About Me -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi there! 👋 I'm Muhammed Azhar Syed a passionate web developer with a love for creating beautiful and functional websites.</p>
+            <p>Ever since I discovered the magic of coding, I've been fascinated by its ability to bring ideas to life on the internet. I enjoy the process of turning a design concept into a fully interactive website that users can engage with.</p>
+            <p>I specialize in HTML, CSS, and JavaScript, and I'm always exploring new technologies to enhance my skills. Whether it's crafting responsive layouts, optimizing performance, or adding interactivity through animations and dynamic features, I strive to create user-friendly and visually appealing web experiences.</p>
+            <p>Apart from coding, I also have a strong eye for design. I believe that a well-designed website not only looks great but also provides intuitive navigation and a delightful user experience.</p>
+            <p>When I'm not coding, you can find me exploring the latest web development trends and experimenting with new techniques. I'm constantly seeking opportunities to grow and challenge myself in this ever-evolving field.</p>
+            <p>I'm excited to collaborate with clients and fellow developers to create impactful digital solutions that make a difference. If you're interested in working together or have any questions, feel free to <a href="#contact">get in touch</a>. I look forward to connecting with you!</p>
+          </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </section>
+
+        <!-- Projects -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <ul>
+      <li>
+        <h3>Project Name 1</h3>
+        <p>A brief description of Project Name 1. Highlight the technologies used, your role, and the outcome or impact of the project.</p>
+        <p><a href="link_to_project_1">Link to Project 1</a></p> 
+      </li>
+      <li>
+        <h3>Project Name 2</h3>
+        <p>A brief description of Project Name 2. Mention the technologies employed, your responsibilities, and any notable achievements or results.</p>
+        <p><a href="link_to_project_2">Link to Project 2</a></p> 
+      </li>
+      <!-- Add more projects here -->
+    </ul>
+  </section>
+
+<!-- Blog -->
+<section id="blog">
+    <h1>Blog</h1>
+    <!-- Add your blog posts here -->
+    <div class="blog-post">
+        <h2>Artificial Intelligence: Revolutionizing the Future</h2>
+        <p>Date: December 8, 2023</p>
+        <p>Author: Muhammed Azhar Syed</p>
+        
+        <p>Artificial Intelligence (AI) has become integral to our daily lives, transforming various industries and shaping the future. 🌌</p>
+        
+        <p>AI refers to the development of computer systems that can perform tasks typically requiring human intelligence. By simulating human thought processes, machines are now able to learn, reason, and problem-solve, leading to remarkable advancements in many fields. 🧠💻</p>
+        
+        <p>In the healthcare industry, AI has revolutionized diagnostics and treatment plans. Intelligent algorithms are capable of analyzing large volumes of medical data, providing accurate diagnoses and personalized treatment recommendations. This not only enhances patient care but also saves lives. 🏥❤️</p>
+        
+        <p>AI has also disrupted the business world, enabling companies to gain valuable insights from big data. Through machine learning algorithms, organizations can analyze customer behavior patterns, optimize supply chains, and make data-driven decisions to drive growth and profitability. 💼💡</p>
+        
+        <p>Moreover, AI has transformed the transportation sector with the emergence of self-driving cars. These vehicles leverage advanced sensors, computer vision, and machine learning technologies to navigate roads autonomously. Self-driving cars have the potential to reduce accidents, ease traffic congestion, and enhance mobility for all. 🚗🚦</p>
+        
+        <p>While AI brings immense potential, it also raises ethical considerations. As AI systems become more sophisticated, questions surrounding privacy, bias, and job displacement arise. Striking the right balance between innovation and ethical responsibility is crucial to ensure a positive and inclusive future. 🤔⚖️</p>
+        
+        <p>In conclusion, Artificial Intelligence is reshaping the world we live in, unlocking new possibilities and empowering human progress. It is crucial for individuals, organizations, and policymakers to embrace AI's potential while addressing its societal implications, ultimately fostering a future where humans and machines coexist harmoniously. 🌐🤝</p>
+    </div>
+    <!-- Add more blog posts here -->
+</section>
+
+        <!-- Testimonials -->
+        <section id="testimonials">
+            <h1>Testimonials</h1>
+            <div id="testimonialContainer"></div>
+            <form id="testimonialForm">
+              <input type="text" id="nameInput" placeholder="Your Name" required>
+              <textarea id="testimonialInput" placeholder="Your Testimonial" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2 class="section-heading">Contact Me</h2>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn-submit" onclick="sendWhatsAppMessage()">Submit</button>
+            </form>
+          </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+          <p>&copy; 2023 Muhammed Azhar Syed's Personal Portfolio. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
