@@ -24,7 +24,7 @@ a {
 
 /* Navigation Styles */
 nav {
-  background-color: #f9f9f9;
+  background-color: #0c0c0c;
   padding: 15px;
 }
 
@@ -283,7 +283,7 @@ body {
   }
   
   button.btn-submit {
-    background-color: #4caf50;
+    background-color: #ff4d4d;
     color: #fff;
     padding: 10px 20px;
     border: none;
