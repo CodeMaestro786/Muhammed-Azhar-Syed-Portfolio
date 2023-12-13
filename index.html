@@ -10,7 +10,7 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <h1 align="center">MY PORTFOLIO</h1>
+            <h1  align="center">MY PORTFOLIO</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -33,6 +33,7 @@
             </section>
         <!-- About Me -->
         <section id="about">
+          <hr width="100%" color="black" size="4"/>
             <h2>About Me</h2>
             <p>Hi there! 👋 I'm Muhammed Azhar Syed a passionate web developer with a love for creating beautiful and functional websites.</p>
             <p>Ever since I discovered the magic of coding, I've been fascinated by its ability to bring ideas to life on the internet. I enjoy the process of turning a design concept into a fully interactive website that users can engage with.</p>
@@ -44,6 +45,7 @@
 
         <!-- Skills -->
         <section id="skills">
+          <hr width="100%" color="black" size="4"/>
             <h2>My Skills</h2>
             <ul>
               <li>Python</li>
@@ -55,6 +57,7 @@
 
         <!-- Projects -->
 <section id="projects">
+  <hr width="100%" color="black" size="4"/>
     <h2>My Projects</h2>
     <ul>
       <li>
@@ -73,6 +76,7 @@
 
 <!-- Blog -->
 <section id="blog">
+  <hr width="100%" color="black" size="4"/>
     <h1>Blog</h1>
     <!-- Add your blog posts here -->
     <div class="blog-post">
@@ -98,46 +102,68 @@
 </section>
 
         <!-- Testimonials -->
-        <section id="testimonials">
-            <h1>Testimonials</h1>
+        <section align="center" id="testimonials">
+          <hr width="100%" color="black" size="4"/>
+            <h1 align="center">Testimonials</h1>
             <div id="testimonialContainer"></div>
             <form id="testimonialForm">
               <input type="text" id="nameInput" placeholder="Your Name" required>
+              <br><br>
               <textarea id="testimonialInput" placeholder="Your Testimonial" required></textarea>
+              <br><br>
               <button type="submit">Submit</button>
             </form>
           </section>
-
+<br><br><br>
         <!-- Contact -->
+        
         <section id="contact">
-            <h2 class="section-heading">Contact Me</h2>
-            <form id="contact-form">
-              <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-              </div>
-              <button type="submit" class="btn-submit" onclick="sendWhatsAppMessage()">Submit</button>
+          <hr width="100%" color="black" size="4"/>
+          <h1 align="center" >Contact Me</h1>
+          <div class="contact-form">
+            <form onsubmit="return validateForm()">
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter Your Name"
+                required
+              /><br />
+              <input
+                type="tel"
+                id="mobile"
+                placeholder="Enter Your Mobile Number"
+                required
+              /><br />
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Your Email"
+                required
+              /><br />
+              <textarea
+                id="message"
+                cols="25"
+                rows="5"
+                placeholder="Enter Your Enquiry"
+                required
+              ></textarea><br />
+              <input type="submit" value="Submit" /><br />
             </form>
-          </section>
-        </div>
-    </main>
+          </div>
+        </section>
 
+    </main>
+     <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+<hr width="100%" color="black" size="4"/>
     <!-- Footer -->
     <footer>
         <div class="container">
-          <p>&copy; 2023 Muhammed Azhar Syed's Personal Portfolio. All rights reserved.</p>
+          <p align="center">&copy; 2023 Muhammed Azhar Syed's Personal Portfolio. All rights reserved.</p>
         </div>
       </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-</body>
+   
+
 </html>
