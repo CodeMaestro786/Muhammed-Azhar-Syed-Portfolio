@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammed Azhar Syed - Emerging Technologies Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3B82F6",
+              secondary: "#10B981",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body { font-family: 'Poppins', sans-serif; }
+      .nav-link { position: relative; }
+      .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #3B82F6;
+      transition: width 0.3s;
+      }
+      .nav-link:hover::after { width: 100%; }
+      .skill-bar {
+      position: relative;
+      height: 8px;
+      background: #e5e7eb;
+      border-radius: 4px;
+      overflow: hidden;
+      }
+      .skill-progress {
+      position: absolute;
+      height: 100%;
+      background: #3B82F6;
+      border-radius: 4px;
+      transition: width 1s ease;
+      }
+      .project-card {
+      transition: transform 0.3s ease;
+      }
+      .project-card:hover {
+      transform: translateY(-8px);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="#" class="text-2xl font-['Pacifico'] text-primary"
+              >Muhammed Azhar Syed</a
+            >
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="nav-link text-gray-700 hover:text-primary"
+              >Home</a
+            >
+            <a href="#about" class="nav-link text-gray-700 hover:text-primary"
+              >About</a
+            >
+            <a href="#skills" class="nav-link text-gray-700 hover:text-primary"
+              >Skills</a
+            >
+            <a
+              href="#projects"
+              class="nav-link text-gray-700 hover:text-primary"
+              >Projects</a
+            >
+            <a
+              href="#education"
+              class="nav-link text-gray-700 hover:text-primary"
+              >Education</a
+            >
+            <a href="#contact" class="nav-link text-gray-700 hover:text-primary"
+              >Contact</a
+            >
+            <a
+              href="https://files.fm/f/7he8a5uew9"
+              target="_blank"
+              class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-blue-600 transition duration-300 inline-block whitespace-nowrap"
+            >
+              Download CV
+            </a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-700 hover:text-primary"
+            >
+              <i class="ri-menu-line ri-2x"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-gray-50"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block px-3 py-2 text-gray-700 hover:bg-gray-50"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="block px-3 py-2 text-gray-700 hover:bg-gray-50"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="block px-3 py-2 text-gray-700 hover:bg-gray-50"
+            >Projects</a
+          >
+          <a
+            href="#education"
+            class="block px-3 py-2 text-gray-700 hover:bg-gray-50"
+            >Education</a
+          >
+          <a
+            href="#contact"
+            class="block px-3 py-2 text-gray-700 hover:bg-gray-50"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <section
+      id="home"
+      class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-50 to-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="md:w-1/2 text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+              Hi, I'm Muhammed Azhar Syed
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-6">
+              Emerging Technologies Developer
+            </p>
+            <p class="text-lg text-gray-600 mb-8">
+              Passionate about creating innovative solutions and exploring
+              cutting-edge technologies.
+            </p>
+            <div class="flex justify-center md:justify-start space-x-4 mb-8">
+              <a
+                href="https://github.com/CodeMaestro786"
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition duration-300"
+              >
+                <i class="ri-github-line ri-xl text-gray-700"></i>
+              </a>
+              <a
+                href="www.linkedin.com/in/muhammed-azhar-syed-1bb0742b7"
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition duration-300"
+              >
+                <i class="ri-linkedin-line ri-xl text-gray-700"></i>
+              </a>
+              <a
+                href="mailto:moesyed78700@icloud.com"
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition duration-300"
+              >
+                <i class="ri-mail-line ri-xl text-gray-700"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/moe.syed.94/"
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition duration-300"
+              >
+                <i class="ri-facebook-line ri-xl text-gray-700"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/muhammed_azhar_syed/"
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition duration-300"
+              >
+                <i class="ri-instagram-line ri-xl text-gray-700"></i>
+              </a>
+            </div>
+            <a
+              href="https://wa.me/27642152212"
+              target="_blank"
+              class="inline-block bg-primary text-white px-8 py-3 !rounded-button hover:bg-blue-600 transition duration-300"
+            >
+              <i class="ri-whatsapp-line mr-2"></i>Let's Connect
+            </a>
+          </div>
+          <div class="md:w-1/2 mt-12 md:mt-0">
+            <img
+              src="https://i.ibb.co/Kzsd5KDx/Whats-App-Image-2023-12-13-at-2-24-36-PM.jpg"
+              alt="Muhammed Azhar Syed"
+              class="w-64 h-64 md:w-96 md:h-96 rounded-full mx-auto object-cover shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          About Me
+        </h2>
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-1/2">
+            <img
+              src="https://public.readdy.ai/ai/img_res/30e0d46a6769c36ff1a3a93bf1f44047.jpg"
+              alt="About John"
+              class="w-full rounded-lg shadow-lg"
+            />
+          </div>
+          <div class="md:w-1/2">
+            <p class="text-lg text-gray-600 mb-6">
+                I'm Muhammed Azhar Syed, a third-year student
+                at Richfield specializing in Emerging Technologies. 
+                I'm a passionate web developer with a strong foundation 
+                in Java, Python, C++, PHP, JavaScript, HTML, CSS, and 
+                cybersecurity.
+                I enjoy creating beautiful, user-friendly websites by 
+                turning design concepts into interactive experiences. 
+                I’m continuously exploring the latest trends in web 
+                development and cybersecurity to stay ahead in this 
+                rapidly evolving field.
+            </p>
+            <p class="text-lg text-gray-600 mb-6">
+                I look forward to collaborating on impactful digital 
+                solutions. Feel free to reach out!
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-semibold text-gray-900">Current Focus</h3>
+                <p class="text-gray-600">AI & Machine Learning</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-semibold text-gray-900">Experience</h3>
+                <p class="text-gray-600">2+ Years Coding</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-semibold text-gray-900">Projects</h3>
+                <p class="text-gray-600">5+ Completed</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-semibold text-gray-900">Specialization</h3>
+                <p class="text-gray-600">Full Stack Development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          Skills & Expertise
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">
+              Programming Languages
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">JavaScript</span>
+                  <span class="text-gray-600">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">Python</span>
+                  <span class="text-gray-600">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">Java</span>
+                  <span class="text-gray-600">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">
+              Web Technologies
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">React</span>
+                  <span class="text-gray-600">88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">Node.js</span>
+                  <span class="text-gray-600">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">MongoDB</span>
+                  <span class="text-gray-600">82%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 82%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">
+              Emerging Technologies
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">Machine Learning</span>
+                  <span class="text-gray-600">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">Blockchain</span>
+                  <span class="text-gray-600">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">IoT</span>
+                  <span class="text-gray-600">78%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 78%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">
+              Tools & Platforms
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">Git</span>
+                  <span class="text-gray-600">92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 92%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">Docker</span>
+                  <span class="text-gray-600">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700">AWS</span>
+                  <span class="text-gray-600">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          Featured Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="project-card bg-white rounded-lg shadow-sm overflow-hidden"
+          >
+            <img
+              src="https://public.readdy.ai/ai/img_res/5f01611fc860d05a5abe974aa71724a2.jpg"
+              alt="AI Chatbot Project"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                AI Chatbot Assistant
+              </h3>
+              <p class="text-gray-600 mb-4">
+                An intelligent chatbot powered by machine learning for customer
+                support automation.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  >Python</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  >TensorFlow</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  >NLP</span
+                >
+              </div>
+              <div class="flex space-x-4">
+                <a href="#" class="text-primary hover:text-blue-700">
+                  <i class="ri-github-line ri-lg"></i> Code
+                </a>
+                <a href="#" class="text-primary hover:text-blue-700">
+                  <i class="ri-external-link-line ri-lg"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="project-card bg-white rounded-lg shadow-sm overflow-hidden"
+          >
+            <img
+              src="https://public.readdy.ai/ai/img_res/bbd117f3a38c9c32419ebb6ce9856217.jpg"
+              alt="Crypto Trading Platform"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Crypto Trading Platform
+              </h3>
+              <p class="text-gray-600 mb-4">
+                A real-time cryptocurrency trading platform with advanced
+                analytics.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  >Node.js</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  >MongoDB</span
+                >
+              </div>
+              <div class="flex space-x-4">
+                <a href="#" class="text-primary hover:text-blue-700">
+                  <i class="ri-github-line ri-lg"></i> Code
+                </a>
+                <a href="#" class="text-primary hover:text-blue-700">
+                  <i class="ri-external-link-line ri-lg"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="project-card bg-white rounded-lg shadow-sm overflow-hidden"
+          >
+            <img
+              src="https://public.readdy.ai/ai/img_res/fc29a6f31da1cc03f3bb18f6e083cba0.jpg"
+              alt="IoT Smart Home"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                IoT Smart Home System
+              </h3>
+              <p class="text-gray-600 mb-4">
+                A comprehensive IoT solution for home automation and monitoring.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  >Arduino</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  >React Native</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  >Firebase</span
+                >
+              </div>
+              <div class="flex space-x-4">
+                <a href="#" class="text-primary hover:text-blue-700">
+                  <i class="ri-github-line ri-lg"></i> Code
+                </a>
+                <a href="#" class="text-primary hover:text-blue-700">
+                  <i class="ri-external-link-line ri-lg"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="education" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          Education & Certifications
+        </h2>
+        <div class="max-w-3xl mx-auto">
+          <div class="relative">
+            <div
+              class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200"
+            ></div>
+            <div class="relative z-10">
+              <div class="mb-8 flex items-center w-full">
+                <div class="w-1/2 pr-8 md:text-right">
+                  <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-900">
+                      Liverpool Secondary School
+                    </h3>
+                    <p class="text-gray-600">National Senior Certificate</p>
+                    <p class="text-gray-600">
+                      Bachelors Pass with 1 Distinction
+                    </p>
+                    <p class="text-primary">2022</p>
+                  </div>
+                </div>
+                <div
+                  class="w-8 h-8 absolute left-1/2 transform -translate-x-1/2 bg-primary rounded-full flex items-center justify-center"
+                >
+                  <i class="ri-graduation-cap-line text-white"></i>
+                </div>
+              </div>
+              <div class="mb-8 flex items-center w-full justify-end">
+                <div class="w-1/2 pl-8">
+                  <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-900">
+                      Richfield Graduate Institute of Technology
+                    </h3>
+                    <p class="text-gray-600">
+                      Bachelor of Science in Information Technology
+                    </p>
+                    <p class="text-primary">2023 - Present</p>
+                  </div>
+                </div>
+                <div
+                  class="w-8 h-8 absolute left-1/2 transform -translate-x-1/2 bg-primary rounded-full flex items-center justify-center"
+                >
+                  <i class="ri-award-line text-white"></i>
+                </div>
+              </div>
+              <div class="mb-8 flex items-center w-full">
+                <div class="w-1/2 pr-8 md:text-right">
+                  <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-900">
+                      TEFL Certificate
+                    </h3>
+                    <p class="text-gray-600">
+                      Teaching English as a Foreign Language
+                    </p>
+                    <p class="text-primary">February 2024</p>
+                  </div>
+                </div>
+                <div
+                  class="w-8 h-8 absolute left-1/2 transform -translate-x-1/2 bg-primary rounded-full flex items-center justify-center"
+                >
+                  <i class="ri-medal-line text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          Get In Touch
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <form id="contact-form" class="space-y-6">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                />
+              </div>
+              <div>
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-gray-700"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                />
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block text-sm font-medium text-gray-700"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-primary text-white px-6 py-3 !rounded-button hover:bg-blue-600 transition duration-300"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div>
+            <div class="bg-gray-50 p-6 rounded-lg mb-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                Contact Information
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100"
+                  >
+                    <i class="ri-mail-line text-primary"></i>
+                  </div>
+                  <div class="ml-4">
+                    <p class="text-sm text-gray-500">Email</p>
+                    <p class="text-gray-900">moesyed78700@icloud.com</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100"
+                  >
+                    <i class="ri-phone-line text-primary"></i>
+                  </div>
+                  <div class="ml-4">
+                    <p class="text-sm text-gray-500">Phone</p>
+                    <p class="text-gray-900">+27642152212</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100"
+                  >
+                    <i class="ri-map-pin-line text-primary"></i>
+                  </div>
+                  <div class="ml-4">
+                    <p class="text-sm text-gray-500">Location</p>
+                    <p class="text-gray-900">Durban, Umhlanga, South Africa</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="h-64 rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14146.271123558767!2d31.070299600000003!3d-29.726800399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef70674a4f04c3d%3A0xd570d658c87c56ba!2sUmhlanga%2C%20Durban%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1711026016814!5m2!1sen!2s"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Muhammed Azhar Syed</h3>
+            <p class="text-gray-400">
+              Emerging Technologies Developer focused on creating innovative
+              solutions for tomorrow's challenges.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#home" class="text-gray-400 hover:text-white">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="text-gray-400 hover:text-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#skills" class="text-gray-400 hover:text-white"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a href="#projects" class="text-gray-400 hover:text-white"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Connect</h3>
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/CodeMaestro786"
+                class="text-gray-400 hover:text-white"
+              >
+                <i class="ri-github-line ri-lg"></i>
+              </a>
+              <a
+                href="www.linkedin.com/in/muhammed-azhar-syed-1bb0742b7"
+                class="text-gray-400 hover:text-white"
+              >
+                <i class="ri-linkedin-line ri-lg"></i>
+              </a>
+              <a
+                href="mailto:moesyed78700@icloud.com"
+                class="text-gray-400 hover:text-white"
+              >
+                <i class="ri-mail-line ri-lg"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/moe.syed.94/"
+                class="text-gray-400 hover:text-white"
+              >
+                <i class="ri-facebook-line ri-lg"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/muhammed_azhar_syed/"
+                class="text-gray-400 hover:text-white"
+              >
+                <i class="ri-instagram-line ri-lg"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="flex-1 px-4 py-2 rounded-l-md text-gray-900"
+              />
+              <button
+                type="submit"
+                class="bg-primary px-4 py-2 rounded-r-md hover:bg-blue-600"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400">
+            &copy; 2024 Muhammed Azhar Syed. All rights reserved.
+          </p>
+          <a
+            href="#home"
+            class="mt-4 md:mt-0 bg-gray-800 p-2 rounded-full hover:bg-gray-700"
+          >
+            <i class="ri-arrow-up-line text-white"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+      // Form submission
+      const contactForm = document.getElementById("contact-form");
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+        const whatsappMessage = `Hi there, I just saw your portfolio!\n\nName: ${name}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`;
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+        const whatsappUrl = `https://wa.me/27642152212?text=${encodedMessage}`;
+        window.open(whatsappUrl, "_blank");
+        contactForm.reset();
+      });
+    </script>
+  </body>
+</html>
